@@ -14,8 +14,10 @@
 		EC3E6450275E459A009F9F2F /* Location_SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E644F275E459A009F9F2F /* Location_SearchTests.swift */; };
 		EC3E645A275E459A009F9F2F /* Location_SearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E6459275E459A009F9F2F /* Location_SearchUITests.swift */; };
 		EC3E645C275E459A009F9F2F /* Location_SearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E645B275E459A009F9F2F /* Location_SearchUITestsLaunchTests.swift */; };
-		EC3E646C275E75C4009F9F2F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E646B275E75C4009F9F2F /* Location.swift */; };
+		EC3E646C275E75C4009F9F2F /* LocationDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E646B275E75C4009F9F2F /* LocationDTO.swift */; };
 		EC3E646E275E760E009F9F2F /* LocationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E646D275E760E009F9F2F /* LocationListViewModel.swift */; };
+		EC3E6470275E9403009F9F2F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E646F275E9403009F9F2F /* APIClient.swift */; };
+		EC3E6472275E965C009F9F2F /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E6471275E965C009F9F2F /* LocationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +48,10 @@
 		EC3E6455275E459A009F9F2F /* Location SearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Location SearchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3E6459275E459A009F9F2F /* Location_SearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location_SearchUITests.swift; sourceTree = "<group>"; };
 		EC3E645B275E459A009F9F2F /* Location_SearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location_SearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		EC3E646B275E75C4009F9F2F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		EC3E646B275E75C4009F9F2F /* LocationDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDTO.swift; sourceTree = "<group>"; };
 		EC3E646D275E760E009F9F2F /* LocationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewModel.swift; sourceTree = "<group>"; };
+		EC3E646F275E9403009F9F2F /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		EC3E6471275E965C009F9F2F /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,8 @@
 		EC3E643D275E4597009F9F2F /* Location Search */ = {
 			isa = PBXGroup;
 			children = (
-				EC3E646A275E75B3009F9F2F /* Model */,
+				EC3E646F275E9403009F9F2F /* APIClient.swift */,
+				EC3E646B275E75C4009F9F2F /* LocationDTO.swift */,
 				EC3E6469275E75A7009F9F2F /* Views */,
 				EC3E6468275E759F009F9F2F /* ViewModel */,
 				EC3E643E275E4597009F9F2F /* Location_SearchApp.swift */,
@@ -137,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				EC3E646D275E760E009F9F2F /* LocationListViewModel.swift */,
+				EC3E6471275E965C009F9F2F /* LocationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -147,14 +153,6 @@
 				EC3E6440275E4597009F9F2F /* ContentView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		EC3E646A275E75B3009F9F2F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				EC3E646B275E75C4009F9F2F /* Location.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,8 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC3E6441275E4597009F9F2F /* ContentView.swift in Sources */,
-				EC3E646C275E75C4009F9F2F /* Location.swift in Sources */,
+				EC3E6472275E965C009F9F2F /* LocationViewModel.swift in Sources */,
+				EC3E646C275E75C4009F9F2F /* LocationDTO.swift in Sources */,
 				EC3E643F275E4597009F9F2F /* Location_SearchApp.swift in Sources */,
+				EC3E6470275E9403009F9F2F /* APIClient.swift in Sources */,
 				EC3E646E275E760E009F9F2F /* LocationListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
