@@ -16,10 +16,4 @@ class LocationViewModel: Identifiable, ObservableObject {
         self.location = location
         self.apiClient = apiClient
     }
-    
-    public func saveLocation(location: LocationDTO) {
-        apiClient.saveLocations(location: location) { location in
-            print(location ?? "")
-        }
-    }
 }

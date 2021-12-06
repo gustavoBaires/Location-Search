@@ -15,14 +15,6 @@ struct LocationView: View {
         HStack {
             Text(viewModel.location.name)
                 .padding()
-            Spacer()
-            Button {
-                viewModel.saveLocation(location: viewModel.location)
-            } label: {
-                Image(systemName: "checkmark.circle.fill")
-                    .font(.largeTitle)
-            }
-            .padding()
         }
         .padding()
     }

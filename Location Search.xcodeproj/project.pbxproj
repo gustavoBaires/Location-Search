@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EC3E643F275E4597009F9F2F /* Location_SearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E643E275E4597009F9F2F /* Location_SearchApp.swift */; };
-		EC3E6441275E4597009F9F2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E6440275E4597009F9F2F /* ContentView.swift */; };
+		EC3E6441275E4597009F9F2F /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E6440275E4597009F9F2F /* LocationListView.swift */; };
 		EC3E6443275E459A009F9F2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3E6442275E459A009F9F2F /* Assets.xcassets */; };
 		EC3E6446275E459A009F9F2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3E6445275E459A009F9F2F /* Preview Assets.xcassets */; };
 		EC3E6450275E459A009F9F2F /* Location_SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E644F275E459A009F9F2F /* Location_SearchTests.swift */; };
@@ -20,6 +20,8 @@
 		EC3E6472275E965C009F9F2F /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E6471275E965C009F9F2F /* LocationViewModel.swift */; };
 		EC3E6474275EA1D5009F9F2F /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E6473275EA1D5009F9F2F /* LocationView.swift */; };
 		EC3E6476275EA22C009F9F2F /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E6475275EA22C009F9F2F /* EmptyStateView.swift */; };
+		EC42C720275EA4EE00CA1B70 /* LocationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC42C71F275EA4EE00CA1B70 /* LocationDetailViewModel.swift */; };
+		EC42C722275EA56C00CA1B70 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC42C721275EA56C00CA1B70 /* LocationDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +44,7 @@
 /* Begin PBXFileReference section */
 		EC3E643B275E4597009F9F2F /* Location Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Location Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3E643E275E4597009F9F2F /* Location_SearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location_SearchApp.swift; sourceTree = "<group>"; };
-		EC3E6440275E4597009F9F2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EC3E6440275E4597009F9F2F /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		EC3E6442275E459A009F9F2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC3E6445275E459A009F9F2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EC3E644B275E459A009F9F2F /* Location SearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Location SearchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +58,8 @@
 		EC3E6471275E965C009F9F2F /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		EC3E6473275EA1D5009F9F2F /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		EC3E6475275EA22C009F9F2F /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		EC42C71F275EA4EE00CA1B70 /* LocationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewModel.swift; sourceTree = "<group>"; };
+		EC42C721275EA56C00CA1B70 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,7 @@
 			children = (
 				EC3E646D275E760E009F9F2F /* LocationListViewModel.swift */,
 				EC3E6471275E965C009F9F2F /* LocationViewModel.swift */,
+				EC42C71F275EA4EE00CA1B70 /* LocationDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -154,9 +159,10 @@
 		EC3E6469275E75A7009F9F2F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EC3E6440275E4597009F9F2F /* ContentView.swift */,
+				EC3E6440275E4597009F9F2F /* LocationListView.swift */,
 				EC3E6473275EA1D5009F9F2F /* LocationView.swift */,
 				EC3E6475275EA22C009F9F2F /* EmptyStateView.swift */,
+				EC42C721275EA56C00CA1B70 /* LocationDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -299,13 +305,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC3E6441275E4597009F9F2F /* ContentView.swift in Sources */,
+				EC3E6441275E4597009F9F2F /* LocationListView.swift in Sources */,
+				EC42C720275EA4EE00CA1B70 /* LocationDetailViewModel.swift in Sources */,
 				EC3E6472275E965C009F9F2F /* LocationViewModel.swift in Sources */,
 				EC3E6476275EA22C009F9F2F /* EmptyStateView.swift in Sources */,
 				EC3E646C275E75C4009F9F2F /* LocationDTO.swift in Sources */,
 				EC3E643F275E4597009F9F2F /* Location_SearchApp.swift in Sources */,
 				EC3E6474275EA1D5009F9F2F /* LocationView.swift in Sources */,
 				EC3E6470275E9403009F9F2F /* APIClient.swift in Sources */,
+				EC42C722275EA56C00CA1B70 /* LocationDetailView.swift in Sources */,
 				EC3E646E275E760E009F9F2F /* LocationListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

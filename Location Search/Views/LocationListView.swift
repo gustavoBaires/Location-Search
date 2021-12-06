@@ -27,8 +27,10 @@ struct LocationListView: View {
                 if viewModel.locations.isEmpty {
                     EmptyStateView()
                 } else {
-                    List(viewModel.locations) { location in
-                        LocationView(viewModel: location)
+                    List(viewModel.locations) { viewModel in
+                        NavigationLink(destination: LocationDetailView(viewModel: LocationDetailViewModel(location: viewModel.location))) {
+                            LocationView(viewModel: viewModel)
+                        }
                     }
                     .listStyle(PlainListStyle())
                 }
