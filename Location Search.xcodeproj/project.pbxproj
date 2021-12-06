@@ -18,6 +18,8 @@
 		EC3E646E275E760E009F9F2F /* LocationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E646D275E760E009F9F2F /* LocationListViewModel.swift */; };
 		EC3E6470275E9403009F9F2F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E646F275E9403009F9F2F /* APIClient.swift */; };
 		EC3E6472275E965C009F9F2F /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E6471275E965C009F9F2F /* LocationViewModel.swift */; };
+		EC3E6474275EA1D5009F9F2F /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E6473275EA1D5009F9F2F /* LocationView.swift */; };
+		EC3E6476275EA22C009F9F2F /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E6475275EA22C009F9F2F /* EmptyStateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		EC3E646D275E760E009F9F2F /* LocationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewModel.swift; sourceTree = "<group>"; };
 		EC3E646F275E9403009F9F2F /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		EC3E6471275E965C009F9F2F /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		EC3E6473275EA1D5009F9F2F /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		EC3E6475275EA22C009F9F2F /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,11 +106,11 @@
 		EC3E643D275E4597009F9F2F /* Location Search */ = {
 			isa = PBXGroup;
 			children = (
-				EC3E646F275E9403009F9F2F /* APIClient.swift */,
+				EC3E643E275E4597009F9F2F /* Location_SearchApp.swift */,
 				EC3E646B275E75C4009F9F2F /* LocationDTO.swift */,
 				EC3E6469275E75A7009F9F2F /* Views */,
 				EC3E6468275E759F009F9F2F /* ViewModel */,
-				EC3E643E275E4597009F9F2F /* Location_SearchApp.swift */,
+				EC3E6477275EA279009F9F2F /* Network */,
 				EC3E6442275E459A009F9F2F /* Assets.xcassets */,
 				EC3E6444275E459A009F9F2F /* Preview Content */,
 			);
@@ -151,8 +155,18 @@
 			isa = PBXGroup;
 			children = (
 				EC3E6440275E4597009F9F2F /* ContentView.swift */,
+				EC3E6473275EA1D5009F9F2F /* LocationView.swift */,
+				EC3E6475275EA22C009F9F2F /* EmptyStateView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		EC3E6477275EA279009F9F2F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EC3E646F275E9403009F9F2F /* APIClient.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,8 +301,10 @@
 			files = (
 				EC3E6441275E4597009F9F2F /* ContentView.swift in Sources */,
 				EC3E6472275E965C009F9F2F /* LocationViewModel.swift in Sources */,
+				EC3E6476275EA22C009F9F2F /* EmptyStateView.swift in Sources */,
 				EC3E646C275E75C4009F9F2F /* LocationDTO.swift in Sources */,
 				EC3E643F275E4597009F9F2F /* Location_SearchApp.swift in Sources */,
+				EC3E6474275EA1D5009F9F2F /* LocationView.swift in Sources */,
 				EC3E6470275E9403009F9F2F /* APIClient.swift in Sources */,
 				EC3E646E275E760E009F9F2F /* LocationListViewModel.swift in Sources */,
 			);
